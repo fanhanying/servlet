@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns="http://java.sun.com/xml/ns/javaee" xmlns:web="http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd"
+	xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd"
+	version="3.0">
+	<context-param>
+		<param-name>contextParam</param-name>
+		<param-value>contextValue</param-value>
+	</context-param>
+	
+	<servlet>
+		<servlet-name>MyServlet</servlet-name>
+		<servlet-class>com.framework.MyServlet</servlet-class>
+		<init-param>
+			<param-name>MyServlet</param-name>
+			<param-value>123</param-value>
+		</init-param>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>MyServlet</servlet-name>
+		<url-pattern>/MyServlet</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>MyHttpServlet</servlet-name>
+		<servlet-class>com.framework.MyHttpServlet</servlet-class>
+		<init-param>
+			<param-name>a</param-name>
+			<param-value>123</param-value>
+		</init-param>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>MyHttpServlet</servlet-name>
+		<url-pattern>/do</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>MyGenericServletTest</servlet-name>
+		<servlet-class>com.framework.MyGenericServletTest</servlet-class>
+		<init-param>
+			<param-name>MyGenericServletTest</param-name>
+			<param-value>123</param-value>
+		</init-param>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>MyGenericServletTest</servlet-name>
+		<url-pattern>/MyGenericServletTest</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>MyHttpServletTest</servlet-name>
+		<servlet-class>com.framework.MyHttpServletTest</servlet-class>
+		<init-param>
+			<param-name>MyHttpServletTest</param-name>
+			<param-value>123</param-value>
+		</init-param>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>MyHttpServletTest</servlet-name>
+		<url-pattern>/MyHttpServletTest</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>MyServletJDBC</servlet-name>
+		<servlet-class>com.framework.MyServletJDBC</servlet-class>
+		<init-param>
+			<param-name>MyServletJDBC</param-name>
+			<param-value>123</param-value>
+		</init-param>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>MyServletJDBC</servlet-name>
+		<url-pattern>/MyServletJDBC</url-pattern>
+	</servlet-mapping>
+</web-app>
